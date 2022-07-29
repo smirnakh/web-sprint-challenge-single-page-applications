@@ -1,11 +1,11 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import {Route} from 'react-router-dom';
+
 
 const Orders = () => {
   
   const [name, setName] = useState('')
-  const [checked, setChecked] = React.useState(false);
+  const [checked, setChecked] = useState(false);
   const [nameError, setNameError] = useState('')
   
   const handleChange = () => {
@@ -24,7 +24,6 @@ const Orders = () => {
   const onSubmit = (e) =>{
     e.preventDefault();
      const fdata = new FormData(e.target)
-
      axios.post(`https://reqres.in/api/orders`, fdata )
     .then(res => res.data)
     .catch(err => console.error(err));
@@ -32,9 +31,7 @@ const Orders = () => {
     return (
         <>
            
-           <h1>Build Your Own Pizza</h1>
-           
-           
+           <h1>Build Your Own Pizza</h1>    
            
       <form id="pizza-form" onSubmit={onSubmit}>
          <label>Enter your name:
@@ -66,16 +63,10 @@ const Orders = () => {
          <label><input name="toppings[]" type="checkbox" onChange={handleChange}/>Black Olives</label>
          <label><input name="toppings[]" type="checkbox" onChange={handleChange}/>Pineapple</label>
       
-      {/* <h2>Choice Of Sauce</h2>
-      <form>
-          <label><input type="radio" value="option1" checked={true} />Original Red</label>
-          <label><input type="radio" value="option1" checked={true} />Garlic Ranch</label>
-          <label><input type="radio" value="option1" checked={true} />BBQ Sauce</label>
-          <label><input type="radio" value="option1" checked={true} />Spinach Alfredo</label>     
-      </form> */}
-    
+  
          
              <input id="special-text" placeholder="Message" name="special-text"/>
+             
              <button id="order-button">Submit</button>
     </form>
 

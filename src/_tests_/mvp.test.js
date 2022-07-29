@@ -33,7 +33,7 @@ describe("Pizza test, sprint 3 challenge", () => {
     const orderPizza = document.querySelector('#order-pizza')
     expect(orderPizza).toBeInTheDocument();
     fireEvent.click(orderPizza)
-    // expect(history.location.pathname).toBe('/pizza')
+    expect(history.location.pathname).toBe('/pizza')
   });
 
   it('The "/pizza" route has a form with #pizza-form, Review how to build a form with the basic HTML form elements', () => {

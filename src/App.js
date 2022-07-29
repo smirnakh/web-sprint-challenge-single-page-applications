@@ -6,7 +6,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Router>
+    <div>
       
       <div className="App-header">
         <div className="logo">
@@ -27,7 +27,7 @@ const App = () => {
           <Orders />
         </Route>
       </Switch>
-   </Router>
+   </div>
   );
 };
 export default App;

@@ -1,17 +1,14 @@
 import React from 'react'
-import {BrowserRouter as Router, useHistory} from 'react-router-dom'
-// useHistory history.push onclickevent in the button
-const Home = () => {
-    const history = useHistory();
+import {BrowserRouter as Router, Link, useHistory} from 'react-router-dom'
 
-    const handleHistory = () =>{
-        history.push("/pizza")
-    }
+const Home = () => {
+    
     return(
      
         <div>
             <h1>Home</h1>
-            <button onClick={handleHistory} id="order-pizza">Order Now</button>
+            
+            <Link id="order-pizza" to="/pizza">Order Now</Link>
         </div>
    
     )
