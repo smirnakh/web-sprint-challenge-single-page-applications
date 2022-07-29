@@ -31,9 +31,9 @@ const Orders = () => {
   }
     return (
         <>
-           <Route path="/pizza">
+           
            <h1>Build Your Own Pizza</h1>
-           </Route>
+           
            
            
       <form id="pizza-form" onSubmit={onSubmit}>

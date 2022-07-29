@@ -21,10 +21,10 @@ const App = () => {
       
       <Switch>
         <Route exact path="/" >
-          <Home  component={Home}/>
+          <Home />
         </Route>
-        <Route path="/pizza" >
-          <Orders  component={Orders}/>
+        <Route exact path="/pizza" >
+          <Orders />
         </Route>
       </Switch>
    </Router>

@@ -8,12 +8,12 @@ const Home = () => {
         history.push("/pizza")
     }
     return(
-      <Router>
+     
         <div>
             <h1>Home</h1>
             <button onClick={handleHistory} id="order-pizza">Order Now</button>
         </div>
-    </Router>
+   
     )
 }
 
