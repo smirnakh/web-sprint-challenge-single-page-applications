@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap');
+
+.home-pg {
+  width: 85vw;
+  height: 60vh;
+  margin: auto;
+  margin-top: 70px;
+
+  /* margin-bottom: 15px; */
+  /* padding-bottom: 30px; */
+  background-image: url('../Assets/tomato.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 600px) {
+  .home-pg {
+    width: 60vw;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+.order-btn {
+  font-family: 'Libre Bodoni', serif;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 1.5);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 1.5);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 1.5);
+}

@@ -1,33 +1,32 @@
-import React from "react";
-import Home from "./components/Home";
-import Orders from "./components/Orders";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import "./App.css";
+import React from 'react';
+import Home from './components/Home';
+import Orders from './components/Orders';
+import Note from './components/Note';
+import { Route, Switch } from 'react-router-dom';
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-      
+    <div className="App">
       <div className="App-header">
         <div className="logo">
-           <img src= "logo192.png" className="App-logo" alt="logo"/>
-           <h1>BloomTech Eats</h1>
+          {/* <img src= "logo192.png" className="App-logo" alt="logo"/> */}
+          <h1 className="header">Build A Pizza</h1>
         </div>
-       
-          <div className="App-link">
-            <button><Link to="/">Home</Link></button>     
-          </div>
       </div>
-      
+
       <Switch>
-        <Route exact path="/" >
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/pizza" >
+        <Route exact path="/pizza">
           <Orders />
         </Route>
+        <Route exact path="/note">
+          <Note />
+        </Route>
       </Switch>
-   </div>
+    </div>
   );
 };
 export default App;

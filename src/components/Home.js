@@ -1,17 +1,14 @@
-import React from 'react'
-import {BrowserRouter as Router, Link, useHistory} from 'react-router-dom'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Home.css';
 const Home = () => {
-    
-    return(
-     
-        <div>
-            <h1>Home</h1>
-            
-            <Link id="order-pizza" to="/pizza">Order Now</Link>
-        </div>
-   
-    )
-}
+  return (
+    <div className="home-pg">
+      <Link id="order-pizza" to="/pizza" className="order-btn">
+        START
+      </Link>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

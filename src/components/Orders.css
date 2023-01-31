@@ -1,0 +1,143 @@
+.container {
+  width: 80%;
+  height: 50vh;
+  margin: auto;
+  /* border: 2px solid white; */
+  padding: 20px;
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+}
+
+.name {
+  display: flex;
+  gap: 20px;
+}
+
+h2 {
+  text-align: start;
+  letter-spacing: 1px;
+}
+.size {
+  display: flex;
+  gap: 20px;
+}
+.topping {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#special-text {
+  margin-top: 20px;
+  display: block;
+  width: 50%;
+  overflow: hidden;
+  resize: both;
+  min-height: 30px;
+  line-height: 20px;
+}
+
+.home-btn {
+  margin-bottom: -10px;
+  font-family: 'Libre Bodoni', serif;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+}
+
+#order-button {
+  margin-top: 30px;
+  font-family: 'Libre Bodoni', serif;
+  font-size: 20px;
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pizza {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 70vw;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+  }
+
+  .topping {
+    width: 30%;
+    padding-right: 20%;
+  }
+
+  #special-text {
+    width: 20%;
+  }
+
+  .pizza {
+    width: 40%;
+    height: 40%;
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: -60px;
+  }
+
+  #pizzaOne {
+    width: 150px;
+    height: 150px;
+    margin: 6px;
+    /* transform: rotate(40deg); */
+    position: absolute;
+    z-index: 3;
+    top: 120px;
+    left: 100px;
+    border: 8px solid white;
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  }
+  #pizzaTwo {
+    width: 150px;
+    height: 150px;
+    margin: 6px;
+    transform: rotate(-25deg);
+    z-index: 4;
+    border: 8px solid white;
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  }
+  #pizzaThree {
+    width: 150px;
+    height: 150px;
+    margin: 6px;
+    transform: rotate(25deg);
+    border: 8px solid white;
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  }
+  #order-button {
+    margin-top: 20px;
+  }
+  #special-text {
+    width: 30%;
+    height: 5%;
+  }
+}
