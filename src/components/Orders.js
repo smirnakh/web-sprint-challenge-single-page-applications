@@ -7,8 +7,7 @@ import pizzaOne from '../Assets/pizza-1.jpeg';
 import pizzaTwo from '../Assets/pizza-2.jpeg';
 import pizzaThree from '../Assets/pizza-3.jpeg';
 
-const Orders = () => {
-  const [name, setName] = useState('');
+const Orders = ({ name, setName }) => {
   const [checked, setChecked] = useState(false);
   const [nameError, setNameError] = useState('');
 

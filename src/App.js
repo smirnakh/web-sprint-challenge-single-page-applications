@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Home from './components/Home';
 import Orders from './components/Orders';
 import Note from './components/Note';
@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
 const App = () => {
+  const [name, setName] = useState('');
   return (
     <div className="App">
       <div className="App-header">
@@ -20,10 +21,10 @@ const App = () => {
           <Home />
         </Route>
         <Route exact path="/pizza">
-          <Orders />
+          <Orders name={name} setName={setName} />
         </Route>
         <Route exact path="/note">
-          <Note />
+          <Note name={name} />
         </Route>
       </Switch>
     </div>
